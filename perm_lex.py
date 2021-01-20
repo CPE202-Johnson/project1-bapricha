@@ -4,12 +4,12 @@ def perm_gen_lex(a):
     perm_list = []
     perm_gen_lex_helper(a, perm_list)
     perm_list.sort()
-    if perm_list == ['']:
-        return ''
     return perm_list
 
 
 def perm_gen_lex_helper(str, perm_list):
+    if str == '':
+        return []
     if len(str) == 1 or len(str) == 0:
         perm_list.append(str)
         return perm_list

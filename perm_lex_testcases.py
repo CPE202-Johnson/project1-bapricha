@@ -13,7 +13,7 @@ class TestAssign1(unittest.TestCase):
         self.assertEqual(perm_gen_lex('a'), ['a'])
 
     def test_perm_04(self):
-        self.assertEqual(perm_gen_lex(''), '')
+        self.assertEqual(perm_gen_lex(''), [])
 
 if __name__ == "__main__":
         unittest.main()
