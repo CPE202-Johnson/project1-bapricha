@@ -4,6 +4,8 @@ def perm_gen_lex(a):
     perm_list = []
     perm_gen_lex_helper(a, perm_list)
     perm_list.sort()
+    if perm_list == ['']:
+        return ''
     return perm_list
 
 
