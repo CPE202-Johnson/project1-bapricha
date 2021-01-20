@@ -3,7 +3,7 @@
 def convert(num, b, base_num=''):
     """Recursive function that returns a string representing num in the base b"""
     quotient = num // b
-    remainder = round(((num / b) - quotient) * b)  # (quotient and remainder as a decimal minus quotient) times the
+    remainder = num % b  # (quotient and remainder as a decimal minus quotient) times the
     # base to get a whole number
     if remainder > 9:
         if remainder == 10:
