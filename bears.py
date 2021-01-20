@@ -14,7 +14,7 @@ def bears(n):
             passing = bears(n // 2)
             if passing:
                 return True
-        if n % 3 == 0 or n % 4 == 0:  # minus (last 2 digits multiplied)
+        if (n % 3 == 0 or n % 4 == 0) and (n % 10 != 0 and (n // 10) % 10 != 0):  # minus (last 2 digits multiplied)
             ones = n % 10
             tens = (n // 10) % 10
             passing = bears(n - (tens * ones))
