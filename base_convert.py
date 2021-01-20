@@ -3,8 +3,9 @@
 def convert(num, b, base_num=''):
     """Recursive function that returns a string representing num in the base b"""
     quotient = num // b
-    remainder = int(((num / b) - quotient) * b)  # (quotient and remainder as a decimal minus quotient) times the
+    remainder = round(((num / b) - quotient) * b)  # (quotient and remainder as a decimal minus quotient) times the
     # base to get a whole number
+    print(quotient, remainder)
     if remainder > 9:
         if remainder == 10:
             base_num += 'A'
