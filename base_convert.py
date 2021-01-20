@@ -5,7 +5,6 @@ def convert(num, b, base_num=''):
     quotient = num // b
     remainder = round(((num / b) - quotient) * b)  # (quotient and remainder as a decimal minus quotient) times the
     # base to get a whole number
-    print(quotient, remainder)
     if remainder > 9:
         if remainder == 10:
             base_num += 'A'
